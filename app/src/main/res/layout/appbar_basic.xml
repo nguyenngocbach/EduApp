@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tlb_Forgot_Password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#002DFF"
+    tools:targetApi="lollipop"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_Toolbar"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/img_back"
+            />
+
+        <TextView
+            android:id="@+id/txtTiltle_Toobar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="QUÊN MẬT KHẨU"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

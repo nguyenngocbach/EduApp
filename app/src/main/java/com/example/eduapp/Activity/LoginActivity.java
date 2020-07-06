@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.eduapp.R;
@@ -19,6 +21,8 @@ import com.example.eduapp.R;
 public class LoginActivity extends AppCompatActivity {
     Button btnLogin, btn_Login_Accept;
     Dialog dlFailedLogin;
+    TextView tvForgotPassword;
+    TextView tvContentLog1, tvContentLog2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +39,14 @@ public class LoginActivity extends AppCompatActivity {
                 dlFailedLogin.show();
             }
         });
+        tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
+        tvContentLog1.setVisibility(View.INVISIBLE);
 
     }
 
@@ -53,5 +65,8 @@ public class LoginActivity extends AppCompatActivity {
                 dlFailedLogin.cancel();
             }
         });
+        tvForgotPassword = (TextView) findViewById(R.id.tvForgotPassword);
+        tvContentLog1 = dlFailedLogin.findViewById(R.id.tv_content_log1);
+        tvContentLog2 = dlFailedLogin.findViewById(R.id.tv_content_log2);
     }
 }
