@@ -24,7 +24,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     TextView tvNotify, tvContentLog1, tvContentLog2;
     EditText edt_Content;
     int Type = 1;       // 1 la nhap email          2 la nhap ma xac thuc
-    Dialog dlFailedLogin;
+    Dialog dlFailedAccept;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +61,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 {
                     tvContentLog1.setText("Mã xác thực không chính xác");
                     tvContentLog2.setText("Lưu ý: mã xác thực chỉ tồn tại trong 5 phút");
+                    dlFailedAccept.show();
                 }
             }
         });
@@ -74,11 +75,11 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         tvNotify = findViewById(R.id.tvNotify);
         btn_Accept = findViewById(R.id.btn_Forgot_Accept);
         edt_Content = findViewById(R.id.edt_Forgot_Content);
-        dlFailedLogin = new Dialog(ForgotPasswordActivity.this);
-        dlFailedLogin.setContentView(R.layout.custom_dialog);
-        dlFailedLogin.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        tvContentLog1 = dlFailedLogin.findViewById(R.id.tv_content_log1);
-        tvContentLog2 = dlFailedLogin.findViewById(R.id.tv_content_log2);
+        dlFailedAccept = new Dialog(ForgotPasswordActivity.this);
+        dlFailedAccept.setContentView(R.layout.custom_dialog);
+        dlFailedAccept.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        tvContentLog1 = dlFailedAccept.findViewById(R.id.tv_content_log1);
+        tvContentLog2 = dlFailedAccept.findViewById(R.id.tv_content_log2);
     }
 
 }
