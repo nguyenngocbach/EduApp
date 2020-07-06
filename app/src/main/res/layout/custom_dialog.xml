@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_main_form_login"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_dialog_failed_login"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_failed_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Tên đăng nhập hoặc mật khẩu không chính xác"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/btn_Login_Accept"
+            android:layout_width="118dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_failed_login"
+            android:text="Xác nhận"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>
