@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/img_dialog_failed_login"
+            android:id="@+id/img_dialog"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
@@ -36,7 +36,7 @@
             android:textColor="#FF0000" />
 
         <Button
-            android:id="@+id/btn_Login_Accept"
+            android:id="@+id/btn_Dialog_Accept"
             android:layout_width="118dp"
             android:layout_height="32dp"
             android:layout_gravity="center"

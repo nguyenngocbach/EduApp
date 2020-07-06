@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -20,7 +21,7 @@ import com.example.eduapp.R;
 public class ForgotPasswordActivity extends AppCompatActivity {
     androidx.appcompat.widget.Toolbar toolbar;
     DrawerLayout drawerLayout;
-    Button btn_back, btn_Accept;
+    Button btn_back, btn_Accept, btn_Dialog_Accept;
     TextView tvNotify, tvContentLog1, tvContentLog2;
     EditText edt_Content;
     int Type = 1;       // 1 la nhap email          2 la nhap ma xac thuc
@@ -65,6 +66,14 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 }
             }
         });
+        btn_Dialog_Accept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dlFailedAccept.cancel();
+                Intent intent = new Intent(ForgotPasswordActivity.this, ChangPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void Anhxa() {
@@ -80,6 +89,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         dlFailedAccept.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         tvContentLog1 = dlFailedAccept.findViewById(R.id.tv_content_log1);
         tvContentLog2 = dlFailedAccept.findViewById(R.id.tv_content_log2);
+        btn_Dialog_Accept = dlFailedAccept.findViewById(R.id.btn_Dialog_Accept);
     }
 
 }
