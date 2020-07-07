@@ -2,36 +2,32 @@
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tlb_Home"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#002DFF"
-    tools:targetApi="lollipop"
     android:minHeight="?attr/actionBarSize"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    tools:targetApi="lollipop">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="40dp">
-        <Button
-            android:layout_gravity="center"
-            android:id="@+id/btn_Toolbar"
-            android:layout_width="20dp"
-            android:layout_height="30dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/img_back"
-            />
+        android:layout_height="40dp"
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txtTiltle_Toobar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="152dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:text="QUÊN MẬT KHẨU"
-            android:textColor="#FFFFFF"
-            android:textSize="24dp" />
+            android:src="@drawable/logo_kidsnow" />
+
+        <Button
+            android:id="@+id/btnToolBarBell"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/img_bell" />
+
     </LinearLayout>
 </androidx.appcompat.widget.Toolbar>
