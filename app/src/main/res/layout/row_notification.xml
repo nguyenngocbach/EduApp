@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/custom_row_notification"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewTitleNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú của phụ huynh"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/textViewDateTimeNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="05/03/2020"
+            android:layout_marginLeft="30dp"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewContentNotification"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn có 1 ghi chú từ phụ huynh của Đức"
+        android:layout_marginLeft="20dp"
+        android:textSize="14dp"
+        android:textColor="#FF0000"/>
+
+</LinearLayout>

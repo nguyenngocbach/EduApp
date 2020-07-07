@@ -5,14 +5,14 @@
         <item
             android:id="@+id/menu_Program"
             android:icon="@drawable/nav_icon"
-            android:title="Chương trình" />
+            android:title="Chương trình"/>
     </group>
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/menu_Permission"
             android:icon="@drawable/nav_icon"
-            android:title="Phân quyền" />
+            android:title="Phân quyền"/>
     </group>
 
 </menu>

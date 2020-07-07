@@ -9,10 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".Activity.ChangPasswordActivity"></activity>
-        <activity
-            android:name=".ui.login.ChangePasswordActivity"
-            android:label="@string/title_activity_change_password" />
+        <activity android:name=".Activity.NotificationActivity"></activity>
+        <activity android:name=".Activity.ChangPasswordActivity"
+            android:label="@string/title_activity_change_password"/>
         <activity android:name=".Activity.ForgotPasswordActivity" />
         <activity
             android:name=".Activity.HomeActivity"
