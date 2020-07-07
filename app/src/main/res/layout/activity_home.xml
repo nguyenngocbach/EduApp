@@ -32,223 +32,1054 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp">
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <LinearLayout
-                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/custom_vien_layout"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_marginBottom="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
                         android:gravity="center"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/attendance1"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/attendance1" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Điểm danh" />
+                            android:text="Điểm danh"
+                            android:textSize="11dp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_gravity="center"
-                        android:gravity="center"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/diary"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/diary" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nhật ký" />
+                            android:text="Nhật ký"
+                            android:textSize="11dp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_gravity="center"
-                        android:gravity="center"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/food_01"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/food_01" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thực đơn" />
+                            android:text="Thực đơn"
+                            android:textSize="11dp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:gravity="center"
-                        android:layout_gravity="center"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/star_01"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/star_01" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Danh hiệu" />
+                            android:text="Danh hiệu"
+                            android:textSize="11dp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_gravity="center"
-                        android:gravity="center"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/potty_01"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/potty_01" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vệ sinh" />
+                            android:text="Vệ sinh"
+                            android:textSize="11dp" />
                     </LinearLayout>
 
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:background="@drawable/custom_vien_layout"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_marginBottom="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
                         android:gravity="center"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/health01"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/health01" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Điểm danh" />
+                            android:text="Điểm danh"
+                            android:textSize="11dp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_gravity="center"
-                        android:gravity="center"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/observation01"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/observation01" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nhật ký" />
+                            android:text="Nhật ký"
+                            android:textSize="11dp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_gravity="center"
-                        android:gravity="center"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/photots01"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/photots01" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thực đơn" />
+                            android:text="Thực đơn"
+                            android:textSize="11dp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:gravity="center"
-                        android:layout_gravity="center"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/playandlearn01"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/playandlearn01" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Danh hiệu" />
+                            android:text="Danh hiệu"
+                            android:textSize="11dp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_gravity="center"
-                        android:gravity="center"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="15dp"
+                        android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:src="@drawable/sleep01"
                             android:layout_width="45dp"
-                            android:layout_height="45dp" />
+                            android:layout_height="45dp"
+                            android:src="@drawable/sleep01" />
 
                         <TextView
-                            android:textSize="11dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vệ sinh" />
+                            android:text="Vệ sinh"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/noticeboardcircle01" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bảng ghi chú"
+                            android:textSize="11dp" />
+
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/calender01" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lịch"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/parentnotewithbackgroud01" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:gravity="center"
+                            android:text="Ghi chú phụ huynh"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/routetracker" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Điểm danh"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/dailyreport" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Báo cáo ngày"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/history" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lịch sử"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/addnote01" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Thống kê"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/expensemanagement1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Học phí"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="THÔNG TIN CHI TIẾT"
+                        android:textColor="#002DFF"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/linehorizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/child" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trẻ"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/staff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhân viên"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/programs" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Lớp học"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/schoolicon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trường học"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/graduate" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thành tựu"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="CÀI ĐẶT &amp; THIẾT LẬP"
+                        android:textColor="#002DFF"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/linehorizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/child" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trẻ"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/staff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhân viên"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/programs" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Lớp học"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/schoolicon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trường học"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/graduate" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thành tựu"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/child" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trẻ"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/staff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhân viên"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/programs" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Lớp học"
+                            android:textSize="11dp" />
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/programs" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/schoolicon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trường học"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/graduate" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thành tựu"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/custom_item_border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/graduate" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thành tựu"
+                        android:textSize="11dp" />
 
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="ỨNG DỤNG"
+                        android:textColor="#002DFF"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/linehorizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/child" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trẻ"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/staff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhân viên"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/programs" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Lớp học"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/schoolicon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trường học"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/graduate" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thành tựu"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/custom_item_border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/child" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trẻ"
+                        android:textSize="11dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="HELP"
+                        android:textColor="#002DFF"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/linehorizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/schoolicon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trường học"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/graduate" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thành tựu"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
             </LinearLayout>
 
         </ScrollView>
