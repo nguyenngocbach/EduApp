@@ -101,37 +101,37 @@
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HaiVM1979@gmail.com"/>
+        android:hint="HaiVM1979@gmail.com"/>
 
     <EditText
         android:id="@+id/editTextAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Địa chỉ"/>
+        android:hint="Địa chỉ"/>
 
     <EditText
         android:id="@+id/editTextDateOfBirth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ngày sinh"/>
+        android:hint="Ngày sinh"/>
 
     <EditText
         android:id="@+id/editTextBloodGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nhóm máu"/>
+        android:hint="Nhóm máu"/>
 
     <EditText
         android:id="@+id/editTextSex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Giới tính"/>
+        android:hint="Giới tính"/>
 
     <TextView
         android:textSize="19dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ngày tham gia"/>
+        android:hint="Ngày tham gia"/>
 
     <EditText
         android:id="@+id/editTextDateJoined"

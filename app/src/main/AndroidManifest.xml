@@ -15,7 +15,7 @@
             android:label="@string/title_activity_change_password" />
         <activity android:name=".Activity.ForgotPasswordActivity" />
         <activity
-            android:name=".Activity.MainActivity"
+            android:name=".Activity.HomeActivity"
             android:theme="@style/AppThemeNoActionBar" />
         <activity
             android:name=".Activity.LoginActivity"
