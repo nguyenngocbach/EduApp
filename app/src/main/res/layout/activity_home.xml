@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/drawerLayoutMain"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".Activity.HomeActivity"
     tools:openDrawer="start">
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nv_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu" />
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/nv_profile"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        app:headerLayout="@layout/nav_header"-->
+<!--        app:menu="@menu/nav_menu" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,8 +23,236 @@
         android:orientation="vertical">
 
         <include
-            android:id="@+id/tb_Forgot_Login"
-            layout="@layout/appbar_basic" />
+            android:id="@+id/tb_Home"
+            layout="@layout/appbar_advance" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_vien_layout"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/attendance1"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Điểm danh" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/diary"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhật ký" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/food_01"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thực đơn" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/star_01"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Danh hiệu" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/potty_01"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vệ sinh" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_vien_layout"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/health01"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Điểm danh" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/observation01"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhật ký" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/photots01"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thực đơn" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/playandlearn01"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Danh hiệu" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/sleep01"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vệ sinh" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
     </LinearLayout>
 
 

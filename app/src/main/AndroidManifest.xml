@@ -10,19 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
         <activity android:name=".Activity.ChangPasswordActivity"></activity>
-        <activity
-            android:name=".ui.login.ChangePasswordActivity"
-            android:label="@string/title_activity_change_password" />
         <activity android:name=".Activity.ForgotPasswordActivity" />
+        <activity android:name=".Activity.LoginActivity" />
         <activity
-            android:name=".Activity.HomeActivity"
-            android:theme="@style/AppThemeNoActionBar" />
-        <activity
-            android:name=".Activity.LoginActivity"
-            android:theme="@style/AppThemeNoActionBar">
+            android:name=".Activity.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

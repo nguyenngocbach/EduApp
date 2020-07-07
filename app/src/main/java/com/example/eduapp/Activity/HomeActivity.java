@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.eduapp.R;
@@ -13,6 +14,8 @@ import com.google.android.material.navigation.NavigationView;
 public class HomeActivity extends AppCompatActivity {
     NavigationView navigationView;
     DrawerLayout drawerLayout;
+    androidx.appcompat.widget.Toolbar toolbar;
+    Button btnToolbarBell;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +25,15 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void Anhxa() {
-//        drawerLayout = findViewById(R.id.drawerLayoutMain);
-//        navigationView = findViewById(R.id.nv_profile);
-//        navigationView.bringToFront();
-//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(HomeActivity.this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-//        drawerLayout.addDrawerListener(toggle);
-//        toggle.syncState();
+        toolbar =  findViewById(R.id.tb_Home);
+        setSupportActionBar(toolbar);
+        drawerLayout = findViewById(R.id.drawerLayoutMain);
+        navigationView = findViewById(R.id.nv_profile);
+        navigationView.bringToFront();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(HomeActivity.this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        btnToolbarBell = findViewById(R.id.btnToolBarBell);
     }
 }

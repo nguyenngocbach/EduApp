@@ -21,7 +21,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@drawable/logo_login" />
+            android:background="@drawable/logo_kidsnow" />
 
         <EditText
             android:textSize="12dp"
