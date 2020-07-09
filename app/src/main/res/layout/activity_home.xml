@@ -9,13 +9,13 @@
     tools:context=".Activity.HomeActivity"
     tools:openDrawer="start">
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nv_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu" />
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/nv_profile"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        app:headerLayout="@layout/nav_header"-->
+<!--        app:menu="@menu/nav_menu" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -288,6 +288,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="80dp"
                         android:layout_height="85dp"
                         android:layout_gravity="center"
@@ -309,6 +310,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="80dp"
                         android:layout_height="85dp"
                         android:layout_gravity="center"
@@ -334,6 +336,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="80dp"
                         android:layout_height="85dp"
                         android:layout_gravity="center"
@@ -383,6 +386,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="80dp"
                         android:layout_height="85dp"
                         android:layout_gravity="center"
@@ -404,6 +408,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="80dp"
                         android:layout_height="85dp"
                         android:layout_gravity="center"
@@ -426,6 +431,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="80dp"
                         android:layout_height="85dp"
                         android:layout_gravity="center"
@@ -475,10 +481,11 @@
                     android:gravity="center">
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
+
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -496,10 +503,10 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -517,10 +524,10 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -539,10 +546,10 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -560,10 +567,10 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -609,14 +616,15 @@
                     android:gravity="center">
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
+                            android:layout_marginTop="10dp"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/roomratio1" />
@@ -633,10 +641,10 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -654,10 +662,10 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -675,14 +683,15 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
+                            android:layout_marginTop="10dp"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/trasnsportsetup" />
@@ -697,10 +706,10 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -724,14 +733,15 @@
                     android:gravity="center">
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
+                            android:layout_marginTop="10dp"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/sickness01" />
@@ -748,10 +758,10 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -769,14 +779,15 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
+                            android:layout_marginTop="10dp"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/staff" />
@@ -794,14 +805,15 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
+                            android:layout_marginTop="10dp"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/cctv" />
@@ -818,10 +830,10 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -843,8 +855,6 @@
                     android:layout_width="75dp"
                     android:layout_height="80dp"
                     android:layout_gravity="left"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/custom_item_border"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -892,7 +902,6 @@
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -913,7 +922,6 @@
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -934,11 +942,11 @@
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
+                            android:layout_marginTop="10dp"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/blog_icon" />
@@ -958,7 +966,6 @@
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -979,7 +986,6 @@
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1001,8 +1007,6 @@
                     android:layout_width="75dp"
                     android:layout_height="80dp"
                     android:layout_gravity="left"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/custom_item_border"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -1050,7 +1054,6 @@
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -1075,7 +1078,6 @@
                         android:layout_height="80dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="50dp"
-                        android:background="@drawable/custom_item_border"
                         android:gravity="center"
                         android:orientation="vertical">
 

@@ -28,6 +28,7 @@ public class HomeActivity extends AppCompatActivity {
     Dialog dialogpicture;
     LinearLayout lv_DiemDanh;
     ImageView imageView_Ava;
+    TextView tvBack_Dialog_Picture;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +59,12 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        tvBack_Dialog_Picture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialogpicture.cancel();
+            }
+        });
     }
 
     private void Anhxa() {
@@ -80,6 +87,7 @@ public class HomeActivity extends AppCompatActivity {
         dialogpicture = new Dialog(HomeActivity.this);
         dialogpicture.setContentView(R.layout.custom_dialog_picture);
         dialogpicture.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        tvBack_Dialog_Picture = dialogpicture.findViewById(R.id.tv_Back_Dialog_Picture);
     }
 
 }

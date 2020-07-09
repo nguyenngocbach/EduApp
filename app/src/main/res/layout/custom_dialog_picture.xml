@@ -79,6 +79,7 @@
 <!--            android:background="@drawable/linehorizontal" />-->
 
         <TextView
+            android:id="@+id/tv_Back_Dialog_Picture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
