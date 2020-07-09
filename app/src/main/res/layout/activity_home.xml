@@ -9,13 +9,13 @@
     tools:context=".Activity.HomeActivity"
     tools:openDrawer="start">
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:id="@+id/nv_profile"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_gravity="start"-->
-<!--        app:headerLayout="@layout/nav_header"-->
-<!--        app:menu="@menu/nav_menu" />-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,6 +46,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/lv_DiemDanh"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center"
@@ -618,12 +619,15 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/child" />
+                            android:src="@drawable/roomratio1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trẻ"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="Thông tin lớp học"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -639,12 +643,12 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/staff" />
+                            android:src="@drawable/favouriteschool" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nhân viên"
+                            android:text="Yêu thích"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -660,13 +664,34 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/programs" />
+                            android:src="@drawable/tags" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thẻ tag"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/trasnsportsetup" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Lớp học"
+                            android:text="Thiết lập di chuyển"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -682,33 +707,12 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/schoolicon" />
+                            android:src="@drawable/qrcodedownload01" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trường học"
-                            android:textSize="11dp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="75dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@drawable/graduate" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Thành tựu"
+                            android:text="Tải về QR"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -730,12 +734,36 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/child" />
+                            android:src="@drawable/sickness01" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trẻ"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="Thông tin dị ứng"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_item_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mời phụ huynh"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -756,35 +784,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nhân viên"
-                            android:textSize="11dp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="75dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/custom_item_border"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@drawable/programs" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
                             android:gravity="center"
-                            android:text="Lớp học"
+                            android:text="Mời nhân viên"
                             android:textSize="11dp" />
 
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@drawable/programs" />
 
                     </LinearLayout>
 
@@ -799,12 +804,15 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/schoolicon" />
+                            android:src="@drawable/cctv" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trường học"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="Truy cập CCTV"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -820,12 +828,12 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/graduate" />
+                            android:src="@drawable/settings" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thành tựu"
+                            android:text="Cấu hình"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -843,12 +851,12 @@
                     <ImageView
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/graduate" />
+                        android:src="@drawable/staff" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Thành tựu"
+                        android:text="Phân quyền"
                         android:textSize="11dp" />
 
                 </LinearLayout>
@@ -891,12 +899,12 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/child" />
+                            android:src="@drawable/shop_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trẻ"
+                            android:text="Cửa hàng"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -912,12 +920,12 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/staff" />
+                            android:src="@drawable/game1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nhân viên"
+                            android:text="Trờ chơi"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -933,13 +941,15 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/programs" />
+                            android:src="@drawable/blog_icon" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
                             android:gravity="center"
-                            android:text="Lớp học"
+                            android:text="Sách điện tử/ Blog"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -955,12 +965,12 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/schoolicon" />
+                            android:src="@drawable/course" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trường học"
+                            android:text="Khóa học"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -976,12 +986,12 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/graduate" />
+                            android:src="@drawable/audio1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thành tựu"
+                            android:text="Sách Audio"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -999,12 +1009,12 @@
                     <ImageView
                         android:layout_width="45dp"
                         android:layout_height="45dp"
-                        android:src="@drawable/child" />
+                        android:src="@drawable/video_youtobekids1" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Trẻ"
+                        android:text="Video"
                         android:textSize="11dp" />
 
                 </LinearLayout>
@@ -1047,12 +1057,15 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/schoolicon" />
+                            android:src="@drawable/faq" />
 
                         <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trường học"
+                            android:gravity="center"
+                            android:text="Câu hỏi thường gặp"
                             android:textSize="11dp" />
 
                     </LinearLayout>
@@ -1069,12 +1082,15 @@
                         <ImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:src="@drawable/graduate" />
+                            android:src="@drawable/helpvideo_01" />
 
                         <TextView
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thành tựu"
+                            android:text="Video hướng dẫn"
                             android:textSize="11dp" />
 
                     </LinearLayout>

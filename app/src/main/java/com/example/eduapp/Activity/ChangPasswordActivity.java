@@ -60,7 +60,7 @@ public class ChangPasswordActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         btnAccept = findViewById(R.id.btn_ChangePassWord_Accept);
         dldAccept = new Dialog(ChangPasswordActivity.this);
-        dldAccept.setContentView(R.layout.custom_dialog);
+        dldAccept.setContentView(R.layout.custom_dialog_notify);
         dldAccept.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         tvContentLog1 = dldAccept.findViewById(R.id.tv_content_log1);
         tvContentLog2 = dldAccept.findViewById(R.id.tv_content_log2);

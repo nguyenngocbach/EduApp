@@ -2,19 +2,14 @@ package com.example.eduapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.eduapp.R;
 
@@ -61,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
     private void Anhxa() {
         btnLogin = (Button) findViewById(R.id.btn_Login);
         dlFailedLogin = new Dialog(LoginActivity.this);
-        dlFailedLogin.setContentView(R.layout.custom_dialog);
+        dlFailedLogin.setContentView(R.layout.custom_dialog_notify);
         dlFailedLogin.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         btn_Dialog_Accept = (Button) dlFailedLogin.findViewById(R.id.btn_Dialog_Accept);
         tvForgotPassword = (TextView) findViewById(R.id.tvForgotPassword);
