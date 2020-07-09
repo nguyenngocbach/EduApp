@@ -1,6 +1,5 @@
 package com.example.eduapp.Activity;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -8,13 +7,11 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.example.eduapp.R;
 
@@ -85,7 +82,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         btn_Accept = findViewById(R.id.btn_Forgot_Accept);
         edt_Content = findViewById(R.id.edt_Forgot_Content);
         dlFailedAccept = new Dialog(ForgotPasswordActivity.this);
-        dlFailedAccept.setContentView(R.layout.custom_dialog);
+        dlFailedAccept.setContentView(R.layout.custom_dialog_notify);
         dlFailedAccept.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         tvContentLog1 = dlFailedAccept.findViewById(R.id.tv_content_log1);
         tvContentLog2 = dlFailedAccept.findViewById(R.id.tv_content_log2);
