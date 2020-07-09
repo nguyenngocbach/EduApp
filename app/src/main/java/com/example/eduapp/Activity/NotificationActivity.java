@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -17,13 +18,13 @@ import java.util.ArrayList;
 
 public class NotificationActivity extends AppCompatActivity {
 
-    TextView txtToolbar;
+    TextView txtToolbar, txtNoDataSearch;
+    Button btnBackToolbar;
     SearchView searchNotification;
     ListView lvNotification;
     ArrayList<Notification> arrNotification;
     ArrayList<Notification> arrDisplay;
     NotificationAdapter adapter;
-    TextView txtNoDataSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,35 +47,46 @@ public class NotificationActivity extends AppCompatActivity {
     }
 
     private void Listener() {
-       searchNotification.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-           @Override
-           public boolean onQueryTextSubmit(String query) {
-               return false;
-           }
+        searchNotification.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
 
-           @Override
-           public boolean onQueryTextChange(String newText) {
-               arrDisplay.clear();
-               for(int i = 0; i <  arrNotification.size(); i ++)
-               {
-                   if(arrNotification.get(i).getTitle().toLowerCase().contains(newText.toLowerCase()) == true)
-                   {
-                       arrDisplay.add(arrNotification.get(i));
-                   }
-               }
-               adapter.notifyDataSetChanged();
-               if(arrDisplay.size() == 0)
-               {
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                arrDisplay.clear();
+                for (int i = 0; i < arrNotification.size(); i++) {
+                    if (arrNotification.get(i).getTitle().toLowerCase().contains(newText.toLowerCase()) == true) {
+                        arrDisplay.add(arrNotification.get(i));
+                    }
+                }
+                adapter.notifyDataSetChanged();
+                if (arrDisplay.size() == 0) {
+                    txtNoDataSearch.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    txtNoDataSearch.setVisibility(View.GONE);
+                }
+                    return false;
+            }
+        });
 
-               }
-               return false;
-           }
-       });
+        //TODO: search == null
+         btnBackToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     private void Mapping() {
         searchNotification = (SearchView) findViewById(R.id.searchViewNotification);
         lvNotification = (ListView) findViewById(R.id.listViewNotification);
         txtToolbar = (TextView) findViewById(R.id.txtTiltle_Toobar);
+        btnBackToolbar = (Button) findViewById(R.id.btn_Toolbar);
+        txtNoDataSearch = (TextView) findViewById(R.id.textViewNoDataNotification);
     }
 }
