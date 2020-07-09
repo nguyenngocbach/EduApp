@@ -3,6 +3,8 @@ package com.example.eduapp.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -16,7 +18,8 @@ import java.util.ArrayList;
 
 public class NotificationActivity extends AppCompatActivity {
 
-    TextView txtToolbar;
+    TextView txtToolbar,txtNoDataSearch;
+    Button btnBackToolbar;
     SearchView searchNotification;
     ListView lvNotification;
     ArrayList<Notification> arrNotification;
@@ -36,11 +39,28 @@ public class NotificationActivity extends AppCompatActivity {
         lvNotification.setAdapter(adapter);
         txtToolbar.setText("Lịch sử thông báo");
 
+        Listener();
+
+    }
+
+    private void Listener() {
+        btnBackToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        //TODO: search == null
+//        if(arrNotification.size() == 2){
+//            txtNoDataSearch.setVisibility(View.VISIBLE);
+//        }
     }
 
     private void Mapping() {
         searchNotification = (SearchView) findViewById(R.id.searchViewNotification);
         lvNotification = (ListView) findViewById(R.id.listViewNotification);
         txtToolbar = (TextView) findViewById(R.id.txtTiltle_Toobar);
+        btnBackToolbar = (Button) findViewById(R.id.btn_Toolbar);
+        txtNoDataSearch = (TextView) findViewById(R.id.textViewNoDataNotification);
     }
 }

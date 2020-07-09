@@ -9,13 +9,13 @@
     tools:context=".Activity.HomeActivity"
     tools:openDrawer="start">
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:id="@+id/nv_profile"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_gravity="start"-->
-<!--        app:headerLayout="@layout/nav_header"-->
-<!--        app:menu="@menu/nav_menu" />-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
 
     <LinearLayout
         android:layout_width="match_parent"
