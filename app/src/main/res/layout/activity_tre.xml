@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChildrenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar_children"
+            layout="@layout/appbar_basic"></include>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            />
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnChuaXL"
+            android:text="Chưa Xêp Lớp"
+            android:minLines="1"
+            android:textColor="#ECECE4"
+            android:layout_marginEnd="5dp"
+            android:textSize="13dp"
+            android:padding="7dp"
+            android:textAllCaps="false"
+            android:layout_width="@dimen/wight_btn_blue"
+            android:background="@drawable/custom_btn_blue"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnMauBe"
+            android:text="Mẫu Giáo Bé"
+            android:minLines="1"
+            android:layout_marginEnd="5dp"
+            android:textColor="#ECECE4"
+            android:textSize="13dp"
+            android:padding="7dp"
+            android:textAllCaps="false"
+            android:layout_width="@dimen/wight_btn_blue"
+            android:background="@drawable/custom_btn_blue"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnMauLon"
+            android:text="Mẫu Giáo Lớn"
+            android:minLines="1"
+            android:textAllCaps="false"
+            android:textColor="#ECECE4"
+            android:textSize="13dp"
+            android:padding="7dp"
+            android:layout_width="@dimen/wight_btn_blue"
+            android:background="@drawable/custom_btn_blue"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_baseline_arrow"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_treActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3" >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_them"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#CDCDCA"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

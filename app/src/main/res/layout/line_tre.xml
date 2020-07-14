@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EAEADA"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:id="@+id/layout_children"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_tre"
+        android:background="@drawable/custom_btn_blue"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:src="@drawable/child"
+        android:layout_height="70dp"/>
+    <TextView
+        android:id="@+id/txt_tre"
+        android:layout_width="wrap_content"
+        android:minLines="1"
+        android:layout_height="wrap_content"
+        android:text="Tên Trẻ"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
