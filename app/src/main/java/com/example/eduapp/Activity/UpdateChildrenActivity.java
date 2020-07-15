@@ -11,26 +11,27 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.eduapp.Activity.ChildrenProFilesActivity;
 import com.example.eduapp.R;
 
-public class ChildrenProFilesActivity extends AppCompatActivity {
+public class UpdateChildrenActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
-    private Button btnBack;
+    private Button btnBack, btnUpdate;
     private TextView txtToolbar,txtProgram;
     private ImageView avatar , imgParents;
     private EditText edtLastName, edtFisrtName, edtBirthDay,
-            edtSex, edtBloodGroup,edtDateStart,edtCode, edtPlace,edtAllergies,edtNote, edtLastNameParents,edFirstNameParents,
+            edtSex, edtBloodGroup,edtDateStart,edtCode, edtPlace,edtAllergies,edtNote, edtLastNameParents,edtFirstNameParents,
             edtReletive, edtPhone, edtAddress;
-    private ImageView imgUpdate;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_children_pro_files);
+        setContentView(R.layout.activity_update_children);
         init();
+        fillData();
         listenner();
-
     }
 
 
@@ -40,6 +41,7 @@ public class ChildrenProFilesActivity extends AppCompatActivity {
         txtToolbar= findViewById(R.id.txtTiltle_Toobar);
         txtProgram= findViewById(R.id.txt_program);
         btnBack= findViewById(R.id.btn_Toolbar);
+        btnUpdate= findViewById(R.id.btn_update);
         txtToolbar.setText("Thông Tin Trẻ");
         avatar = findViewById(R.id.img_tre);
         imgParents= findViewById(R.id.img_parents);
@@ -47,16 +49,36 @@ public class ChildrenProFilesActivity extends AppCompatActivity {
         edtFisrtName= findViewById(R.id.edt_fisrtName);
         edtBirthDay= findViewById(R.id.birth_day);
         edtSex= findViewById(R.id.edt_sex);
+        edtAllergies= findViewById(R.id.edt_allergies);
         edtDateStart= findViewById(R.id.date_start);
         edtCode= findViewById(R.id.edt_code);
         edtPlace= findViewById(R.id.edt_place);
         edtBloodGroup= findViewById(R.id.edt_blood_group);
         edtNote= findViewById(R.id.edt_note);
         edtLastNameParents =findViewById(R.id.edt_lastNameParents);
-        edtLastNameParents =findViewById(R.id.edt_fisrtNameParents);
+        edtFirstNameParents =findViewById(R.id.edt_fisrtNameParents);
+        edtReletive = findViewById(R.id.edt_relative);
         edtPhone =findViewById(R.id.edt_sdt);
         edtAddress =findViewById(R.id.edt_email_address);
-        imgUpdate= findViewById(R.id.btn_Update);
+    }
+
+    private void fillData() {
+        Intent intent= getIntent();
+        // todo something
+        edtLastName.setText(intent.getStringExtra(""));
+        edtFisrtName.setText(intent.getStringExtra(""));
+        edtBirthDay.setText(intent.getStringExtra(""));
+        edtSex.setText(intent.getStringExtra(""));
+        edtDateStart.setText(intent.getStringExtra(""));
+        edtCode.setText(intent.getStringExtra(""));
+        edtPlace.setText(intent.getStringExtra(""));
+        edtBloodGroup.setText(intent.getStringExtra(""));
+        edtNote.setText(intent.getStringExtra(""));
+        edtLastNameParents.setText(intent.getStringExtra(""));
+        edtLastNameParents.setText(intent.getStringExtra(""));
+        edtReletive.setText(intent.getStringExtra(""));
+        edtPhone.setText(intent.getStringExtra(""));
+        edtAddress.setText(intent.getStringExtra(""));
     }
 
     private void listenner() {
@@ -66,12 +88,14 @@ public class ChildrenProFilesActivity extends AppCompatActivity {
                 finish();
             }
         });
-        imgUpdate.setOnClickListener(new View.OnClickListener() {
+        btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(ChildrenProFilesActivity.this, UpdateChildrenActivity.class);
+                //todo something
+                //Intent intent= new Intent(ChildrenProFilesActivity.this, UpdateChildrenActivity.class);
                 //intent.putExtra();
-                startActivity(intent);
+                //startActivity(intent);
+                finish();
             }
         });
     }

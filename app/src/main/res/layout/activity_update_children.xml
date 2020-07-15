@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activity.ChildrenProFilesActivity">
+    android:layout_height="match_parent"
+    tools:context=".Activity.UpdateChildrenActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -102,6 +102,7 @@
                 android:layout_height="wrap_content"/>
             <EditText
                 android:id="@+id/edt_blood_group"
+                android:inputType="date"
                 android:text="B"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -136,7 +137,7 @@
                 android:id="@+id/edt_code"
                 android:text="123454333"
                 android:layout_marginTop="5dp"
-                android:inputType="number"
+                android:inputType="date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
@@ -151,6 +152,7 @@
             <EditText
                 android:id="@+id/edt_place"
                 android:text="Mỹ Đình- Nam Từ Liên - Hà Nội"
+                android:inputType="date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
@@ -165,6 +167,7 @@
             <EditText
                 android:id="@+id/edt_allergies"
                 android:layout_marginTop="5dp"
+                android:inputType="date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
@@ -180,6 +183,7 @@
             <EditText
                 android:id="@+id/edt_note"
                 android:layout_marginTop="5dp"
+                android:inputType="date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
@@ -239,7 +243,6 @@
                     android:src="@drawable/custom_edt_addchildren"
                     />
                 <TextView
-
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:maxLines="1"
@@ -358,17 +361,16 @@
                 android:text="abcxyz@email.com"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <ImageView
-                android:id="@+id/btn_Update"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="right"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/addnote01"
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:background="@color/colorblue"
+                android:text="Lưu"
+                android:textStyle="bold"
+                android:textColor="@color/colorwhite"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
                 />
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

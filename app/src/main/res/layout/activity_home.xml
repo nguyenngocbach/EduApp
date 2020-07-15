@@ -9,13 +9,13 @@
     tools:context=".Activity.HomeActivity"
     tools:openDrawer="start">
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:id="@+id/nv_profile"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_gravity="start"-->
-<!--        app:headerLayout="@layout/nav_header"-->
-<!--        app:menu="@menu/nav_menu" />-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -481,11 +481,11 @@
                     android:gravity="center">
 
                     <LinearLayout
+                        android:id="@+id/children_group"
                         android:layout_marginLeft="5dp"
                         android:layout_width="75dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
-
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -508,6 +508,7 @@
                         android:layout_height="80dp"
                         android:layout_gravity="center"
                         android:gravity="center"
+                        android:id="@+id/staff_group"
                         android:orientation="vertical">
 
                         <ImageView
@@ -1103,6 +1104,7 @@
         </ScrollView>
 
     </LinearLayout>
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

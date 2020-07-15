@@ -4,13 +4,16 @@
     android:layout_height="200dp"
     android:orientation="vertical"
     android:weightSum="4"
-    android:paddingBottom="25dp"
+    android:paddingBottom="20dp"
     android:background="@drawable/custom_dialog_children"
+    android:backgroundTint="@color/colorwhite"
     >
     <Button
         android:id="@+id/going"
         android:textAllCaps="false"
         android:text="Đi Tới"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         android:layout_margin="0dp"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -18,7 +21,8 @@
     <Button
         android:id="@+id/btn_resume"
         android:textAllCaps="false"
-        android:layout_margin="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         android:text="Hồ Sơ"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -28,14 +32,17 @@
         android:text="Sức Khỏe"
         android:textAllCaps="false"
         android:layout_weight="1"
-        android:layout_margin="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <Button
         android:id="@+id/btn_appreciate"
         android:text="Đánh Giá"
         android:textAllCaps="false"
-        android:layout_margin="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

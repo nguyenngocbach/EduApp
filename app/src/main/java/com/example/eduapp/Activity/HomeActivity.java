@@ -29,6 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     LinearLayout lv_DiemDanh;
     ImageView imageView_Ava;
     TextView tvBack_Dialog_Picture;
+    LinearLayout actionChildrens, actionStaff;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +66,19 @@ public class HomeActivity extends AppCompatActivity {
                 dialogpicture.cancel();
             }
         });
+
+        actionChildrens.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,ChildrenActivity.class));
+            }
+        });
+        actionStaff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //startActivity(new Intent(HomeActivity.this));
+            }
+        });
     }
 
     private void Anhxa() {
@@ -72,7 +86,7 @@ public class HomeActivity extends AppCompatActivity {
         toolbar =  findViewById(R.id.tb_Home);
         setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.drawerLayoutMain);
-        //navigationView = findViewById(R.id.nv_profile);
+        navigationView = findViewById(R.id.nv_profile);
         navigationView.bringToFront();
         View v = navigationView.getHeaderView(0);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(HomeActivity.this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -81,6 +95,9 @@ public class HomeActivity extends AppCompatActivity {
         btnToolbarBell = findViewById(R.id.btnToolBarBell);
         lv_DiemDanh = findViewById(R.id.lv_DiemDanh);
         imageView_Ava = v.findViewById(R.id.imageViewAvata);
+        //
+        actionChildrens= findViewById(R.id.children_group);
+        actionStaff= findViewById(R.id.staff_group);
     }
 
     private void Dialog_Map() {

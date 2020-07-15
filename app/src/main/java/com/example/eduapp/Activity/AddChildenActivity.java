@@ -17,7 +17,7 @@ public class AddChildenActivity extends AppCompatActivity {
     private TextView txtToolbar, txtProgram,txtParents;
     private Button btnBack, btnProgram, btnParents, btnSave;
     private ImageView avatar;
-    private EditText edtLastName, edtFisrtName, edtBirthDay, 
+    private EditText edtLastName, edtFisrtName, edtBirthDay,
             edtSex, edtBloodGroup,edtDateStart,edtCode, edtPlace,edtAllergies,edtNote;
 
     @Override

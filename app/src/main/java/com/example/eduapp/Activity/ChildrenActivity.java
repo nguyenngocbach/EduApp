@@ -91,6 +91,7 @@ public class ChildrenActivity extends AppCompatActivity implements ChildListener
         btnDLResume= dialog.findViewById(R.id.btn_resume);
         btnDLHealth= dialog.findViewById(R.id.btn_health);
         btnDLAppreciate= dialog.findViewById(R.id.btn_appreciate);
+        dialog.show();
         DialogListener();
     }
 

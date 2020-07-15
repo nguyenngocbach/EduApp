@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".Activity.ChildrenProFilesActivity"></activity>
+        <activity android:name=".Activity.UpdateStaffActivity"></activity>
+        <activity android:name=".Activity.AddStaffActivity" />
+        <activity android:name=".Activity.StaffInformation2Activity" />
+        <activity android:name=".Activity.StaffInformationActivity" />
+        <activity android:name=".Activity.StaffActivity" />
+        <activity android:name=".Activity.UpdateChildrenActivity" />
+        <activity android:name=".Activity.ChildrenProFilesActivity" />
         <activity android:name=".Activity.AddChildenActivity" />
         <activity android:name=".Activity.ChildrenActivity" />
         <activity android:name=".Activity.HomeActivity">
