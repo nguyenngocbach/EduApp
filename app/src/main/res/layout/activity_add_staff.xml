@@ -56,14 +56,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Họ"
-                android:textSize="14dp" />
+                android:textSize="10dp" />
 
             <EditText
                 android:id="@+id/edt_fisrtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Tên"
-                android:textSize="14dp" />
+                android:textSize="10dp" />
         </LinearLayout>
     </LinearLayout>
 

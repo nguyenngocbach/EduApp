@@ -71,11 +71,6 @@ public class AddStaffActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //todo something
                 finish();
-                check= getData();
-                if (check==true) finish();
-                else {
-
-                }
             }
         });
     }

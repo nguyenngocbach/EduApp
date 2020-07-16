@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     LinearLayout lv_DiemDanh;
     ImageView imageView_Ava;
     TextView tvBack_Dialog_Picture;
-    LinearLayout actionChildrens, actionStaff;
+    LinearLayout actionChildrens, actionStaff, actionSchool;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,7 +76,13 @@ public class HomeActivity extends AppCompatActivity {
         actionStaff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(HomeActivity.this));
+                startActivity(new Intent(HomeActivity.this,StaffActivity.class));
+            }
+        });
+        actionSchool.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,SchoolActivity.class));
             }
         });
     }
@@ -98,6 +104,7 @@ public class HomeActivity extends AppCompatActivity {
         //
         actionChildrens= findViewById(R.id.children_group);
         actionStaff= findViewById(R.id.staff_group);
+        actionSchool= findViewById(R.id.btn_school);
     }
 
     private void Dialog_Map() {

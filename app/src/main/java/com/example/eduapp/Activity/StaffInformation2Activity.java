@@ -2,7 +2,10 @@ package com.example.eduapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +13,15 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.eduapp.Class.PermissionAdapter;
+import com.example.eduapp.Model.Permission;
+import com.example.eduapp.Model.PermissionListener;
 import com.example.eduapp.R;
 
-public class StaffInformation2Activity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class StaffInformation2Activity extends AppCompatActivity implements PermissionListener {
 
     private Toolbar toolbar;
     private TextView txtTitle,txtProgram, txtListProgram, txtPermission, txtListPermisson;
@@ -20,6 +29,10 @@ public class StaffInformation2Activity extends AppCompatActivity {
     private ImageView imgStaff,btnUpdate;
     private EditText edtLastName, edtFirstName,edtBrithDay, edtSex,
             edtBloon,edtStart,edtCode, edtplace,edtAllergy,edtNote;
+
+    private RecyclerView recyclerPermission;
+    private List<Permission> mPermissions;
+    private PermissionAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +53,12 @@ public class StaffInformation2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //todo something
+                Intent intent= new Intent(StaffInformation2Activity.this,UpdateStaffActivity.class);
+                Bundle bundle= new Bundle();
+                //
+                //
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
     }
@@ -71,5 +90,28 @@ public class StaffInformation2Activity extends AppCompatActivity {
         // recycleView
         btnUpdate= findViewById(R.id.btn_update);
 
+        recyclerPermission= findViewById(R.id.recycle_permission);
+        addData();
+        adapter= new PermissionAdapter(this,mPermissions,this);
+        LinearLayoutManager manager= new LinearLayoutManager(this);
+        manager.setOrientation(RecyclerView.VERTICAL);
+        recyclerPermission.setLayoutManager(manager);
+        recyclerPermission.setAdapter(adapter);
+
+
+    }
+
+    private void addData() {
+        mPermissions= new ArrayList<>();
+        mPermissions.add(new Permission(12,"Permission One"));
+        mPermissions.add(new Permission(12,"Permission Two"));
+        mPermissions.add(new Permission(13,"Permission Three"));
+        mPermissions.add(new Permission(14,"Permission Four"));
+        mPermissions.add(new Permission(15,"Permission Five"));
+    }
+
+    @Override
+    public void getPermission(Permission permission) {
+        // todo something
     }
 }

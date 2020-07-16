@@ -4,4 +4,13 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="wight_btn_blue">100dp</dimen>
     <dimen name="size_btn_add_children">40dp</dimen>
+    <dimen name="space_dote">15dp</dimen>
+    <dimen name="wight_dote">12dp</dimen>
+    <dimen name="margin_school">25dp</dimen>
+    <dimen name="margin_top_school">7dp</dimen>
+    <dimen name="padding_start_school">10dp</dimen>
+    <dimen name="hight_icon">30dp</dimen>
+    <dimen name="size_school">18sp</dimen>
+    <dimen name="padding_front_school">15dp</dimen>
+    <dimen name="higth_edt">35dp</dimen>
 </resources>

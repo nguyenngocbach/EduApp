@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.eduapp.Class.ChildrenAdapter;
+import com.example.eduapp.Class.StaffAdapter;
 import com.example.eduapp.Model.Staff;
 import com.example.eduapp.Model.StaffListenner;
 import com.example.eduapp.R;
@@ -28,11 +29,13 @@ public class StaffActivity extends AppCompatActivity implements StaffListenner {
     private RecyclerView recyclerView;
     private ImageView btnAddStaff;
     private List<Staff> mStaff;
+    private StaffAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_staff);
         init();
+
     }
 
     private void init() {
@@ -45,10 +48,19 @@ public class StaffActivity extends AppCompatActivity implements StaffListenner {
         recyclerView= findViewById(R.id.list_staff);
         addData();
 
+        adapter= new StaffAdapter(this,mStaff,this);
+        recyclerView.setAdapter(adapter);
+
         btnAddStaff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity( new Intent(StaffActivity.this,AddStaffActivity.class));
+            }
+        });
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 
