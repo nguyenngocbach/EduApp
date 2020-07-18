@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TitleActivity">
+
+    <include
+        android:id="@+id/toolbar_TitleActivity"
+        layout="@layout/appbar_basic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/note_one"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_TitleActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/custom_edt_addchildren"
+        android:padding="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_width="@dimen/title_hight_size"
+        android:layout_height="@dimen/title_hight_size"/>
+
+    <TextView
+        android:id="@+id/txt_childrent_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_hight_size"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text="Trẻ Em"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toEndOf="@id/note_one"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_TitleActivity" />
+    <Button
+        android:id="@+id/btn_pick_childrens"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_TitleActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/title_hight_size"
+        android:text="Chọn"
+        android:textColor="@color/colorwhite"
+        android:background="@color/colorblue"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:id="@+id/txt_pick_children"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_childrent_title"
+        app:layout_constraintStart_toEndOf="@id/note_one"
+        android:text="Chưa có trẻ nào "
+        app:layout_constraintEnd_toStartOf="@id/btn_pick_childrens"
+        android:layout_marginTop="10dp"
+        android:paddingStart="17dp"
+        />
+    <TextView
+        android:id="@+id/txt_line_one"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:background="#ACACAB"
+        app:layout_constraintTop_toBottomOf="@id/txt_pick_children"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/note_two"
+        app:layout_constraintTop_toBottomOf="@id/txt_line_one"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/custom_edt_addchildren"
+        android:padding="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_width="@dimen/title_hight_size"
+        android:layout_height="@dimen/title_hight_size"/>
+
+    <TextView
+        android:id="@+id/txt_type_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_hight_size"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text="Trẻ Em"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toEndOf="@id/note_two"
+        app:layout_constraintTop_toBottomOf="@id/txt_line_one" />
+    <Button
+        android:id="@+id/btn_pick_title"
+        app:layout_constraintTop_toBottomOf="@id/txt_line_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/title_hight_size"
+        android:text="Chọn"
+        android:textColor="@color/colorwhite"
+        android:background="@color/colorblue"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:id="@+id/txt_pick_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_type_title"
+        app:layout_constraintStart_toEndOf="@id/note_two"
+        android:text="Chưa có trẻ nào "
+        app:layout_constraintEnd_toStartOf="@id/btn_pick_title"
+        android:layout_marginTop="10dp"
+        android:paddingStart="17dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_line_two"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:background="#ACACAB"
+        app:layout_constraintTop_toBottomOf="@id/txt_pick_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_detial"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_line_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Nhập Chị Tiết Ở Đây"
+        android:textSize="14dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edt_detial"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="27dp"
+        android:text="0/800"
+        android:padding="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_detial"
+        android:background="@color/colorblue"
+        android:text="Gửi"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

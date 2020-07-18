@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SleepActivity">
+    <include layout="@layout/appbar_basic"
+        android:id="@+id/tool_bar"/>
+
+    <ImageView
+        android:id="@+id/dotes"
+        android:layout_width="@dimen/heght_size_sleeping"
+        android:layout_height="@dimen/heght_size_sleeping"
+        android:src="@drawable/custom_edt_addchildren"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/txt_sleeping"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_sleeping"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        app:layout_constraintStart_toEndOf="@id/dotes"
+        app:layout_constraintEnd_toStartOf="@id/btnSelection"
+        android:layout_marginTop="50dp"
+        android:text="Trẻ Em"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        />
+    <Button
+        android:id="@+id/btnSelection"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="45dp"
+        android:background="@color/colorblue"
+        android:text="Chọn"
+        android:textColor="@color/colorwhite"
+        android:textAllCaps="false"
+        />
+    <FrameLayout
+        android:id="@+id/frame_layoyt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_sleeping"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        >
+        <TextView
+            android:id="@+id/txt_childrens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:paddingStart="10dp"
+            android:text="Không có trẻ nào được chọn "
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/recircle_list_children"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_line"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        app:layout_constraintTop_toBottomOf="@id/frame_layoyt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:background="@color/colergrey"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        />
+
+
+    <TextView
+        android:id="@+id/pickTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:text="Chọn Thời Gian Ngủ"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/titleStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintTop_toBottomOf="@id/pickTime"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="35dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:id="@+id/edt_timeStart"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/titleStart"
+        app:layout_constraintStart_toEndOf="@id/titleStart"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/icon_startTime"
+        app:layout_constraintStart_toEndOf="@id/edt_timeStart"
+        app:layout_constraintBottom_toBottomOf="@id/edt_timeStart"
+        android:src="@drawable/ic_baseline_access_time_24"
+        android:padding="3dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/titleEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End"
+        app:layout_constraintTop_toBottomOf="@id/titleStart"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="35dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:id="@+id/edt_timeEnd"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/titleEnd"
+        app:layout_constraintStart_toEndOf="@id/titleStart"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/icon_endTime"
+        app:layout_constraintStart_toEndOf="@id/edt_timeEnd"
+        app:layout_constraintBottom_toBottomOf="@id/edt_timeEnd"
+        android:src="@drawable/ic_baseline_access_time_24"
+        android:padding="3dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <EditText
+        android:id="@+id/edt_files"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_sleeping"
+        app:layout_constraintTop_toBottomOf="@id/icon_endTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="14dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:paddingEnd="40dp"
+        android:hint="nhân link vào đây"
+        />
+    <ImageView
+        android:id="@+id/icon_files"
+        android:src="@drawable/ic_baseline_attach_file_24"
+        app:layout_constraintBottom_toBottomOf="@id/edt_files"
+        app:layout_constraintEnd_toEndOf="@id/edt_files"
+        android:layout_width="@dimen/heght_size_sleeping"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="@dimen/heght_size_sleeping"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icon_files"
+        app:layout_constraintEnd_toEndOf="@id/icon_files"
+        android:text="0/800"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:text="Gửi"
+        android:background="@color/colorblue"
+        android:textColor="@color/colorwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_files" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -71,15 +71,15 @@ public class ChildrenActivity extends AppCompatActivity implements ChildListener
 
     private void addData() {
         mChildren = new ArrayList<>();
-        mChildren.add(new Children(1,"Nguyễn A","dsdsdsds"));
-        mChildren.add(new Children(1,"Nguyễn B","dsdsdsds"));
-        mChildren.add(new Children(1,"Nguyễn C","dsdsdsds"));
-        mChildren.add(new Children(1,"Nguyễn D","dsdsdsds"));
-        mChildren.add(new Children(1,"Nguyễn E","dsdsdsds"));
-        mChildren.add(new Children(1,"Nguyễn G","dsdsdsds"));
-        mChildren.add(new Children(1,"Nguyễn H","dsdsdsds"));
-        mChildren.add(new Children(1,"Nguyễn I","dsdsdsds"));
-        mChildren.add(new Children(1,"Nguyễn L","dsdsdsds"));
+        mChildren.add(new Children(1,"Nguyễn A","dsdsdsds",false));
+        mChildren.add(new Children(1,"Nguyễn B","dsdsdsds",false));
+        mChildren.add(new Children(1,"Nguyễn C","dsdsdsds",false));
+        mChildren.add(new Children(1,"Nguyễn D","dsdsdsds",false));
+        mChildren.add(new Children(1,"Nguyễn E","dsdsdsds",false));
+        mChildren.add(new Children(1,"Nguyễn G","dsdsdsds",false));
+        mChildren.add(new Children(1,"Nguyễn H","dsdsdsds",false));
+        mChildren.add(new Children(1,"Nguyễn I","dsdsdsds",false));
+        mChildren.add(new Children(1,"Nguyễn L","dsdsdsds",false));
     }
 
     @Override

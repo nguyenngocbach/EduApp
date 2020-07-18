@@ -9,8 +9,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.eduapp.Activity.PickChildrenActivity;
 import com.example.eduapp.Model.ChildListener;
 import com.example.eduapp.Model.Children;
 import com.example.eduapp.R;
@@ -21,6 +23,8 @@ public class ChildrenAdapter extends RecyclerView.Adapter<ChildrenAdapter.Holder
     private Context mContext;
     private List<Children> mChildrenss;
     private ChildListener mListener;
+
+    private  String STATUS="PICKCHILDRENACTIVITY";
 
     public ChildrenAdapter(Context mContext, List<Children> mTres, ChildListener mListener) {
         this.mContext = mContext;
@@ -55,18 +59,22 @@ public class ChildrenAdapter extends RecyclerView.Adapter<ChildrenAdapter.Holder
     public class Holder extends RecyclerView.ViewHolder {
         ImageView imgTre;
         TextView nameTre;
-        LinearLayout layout;
+        ConstraintLayout layout;
+        ImageView icon;
         public Holder(@NonNull View itemView) {
             super(itemView);
             imgTre= itemView.findViewById(R.id.img_tre);
             nameTre= itemView.findViewById(R.id.txt_tre);
             layout= itemView.findViewById(R.id.layout_children);
-
+            icon= itemView.findViewById(R.id.icon_childrens);
         }
 
         public void onBind(Children tre) {
             nameTre.setText(tre.getName());
-
+            if (!STATUS.equals(PickChildrenActivity.ACTIVITY)) return;
+            if (tre.isCheck()){
+                icon.setVisibility(View.VISIBLE);
+            } else icon.setVisibility(View.INVISIBLE);
         }
     }
 }

@@ -1,27 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#EAEADA"
+    android:background="#F6F6F6"
     android:orientation="vertical"
     android:layout_margin="10dp"
     android:id="@+id/layout_children"
+    android:padding="5dp"
     >
+
     <de.hdodenhof.circleimageview.CircleImageView
+        android:padding="5dp"
         android:id="@+id/img_tre"
-        android:background="@drawable/custom_btn_blue"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_gravity="center"
-        android:layout_width="70dp"
         android:src="@drawable/child"
-        android:layout_height="70dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/txt_tre"
         android:layout_width="wrap_content"
-        android:minLines="1"
         android:layout_height="wrap_content"
-        android:text="Tên Trẻ"
-        android:textSize="18dp"
         android:layout_gravity="center"
+        android:minLines="1"
+        android:text="Tên Trẻ"
+        android:layout_marginTop="3dp"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_tre" />
+
+    <ImageView
+        android:id="@+id/icon_childrens"
+        android:visibility="invisible"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/custom_check"
+        app:layout_constraintTop_toTopOf="@id/img_tre"
+        app:layout_constraintEnd_toEndOf="@id/img_tre"
         />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

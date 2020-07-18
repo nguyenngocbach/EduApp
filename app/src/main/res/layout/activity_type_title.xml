@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnConfirm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TypeTitleActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/appbar_basic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBrave"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_of_typetitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_btn_typtitle"
+        android:text="Can Bảm"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btnCreative"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
+
+    <Button
+        android:id="@+id/btnCreative"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_of_typetitle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/custom_btn_typtitle"
+        android:text="Sáng Tạo"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBrave"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
+
+
+    <Button
+        android:id="@+id/btnhelpful"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_of_typetitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_btn_typtitle"
+        android:text="Thân Thiện"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/btn_asisten"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBrave" />
+
+    <Button
+        android:id="@+id/btn_asisten"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_of_typetitle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/custom_btn_typtitle"
+        android:text="Giúp Đỡ"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnhelpful"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreative" />
+
+    <Button
+        android:id="@+id/btn_onTime"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_of_typetitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_btn_typtitle"
+        android:text="Thân Thiện"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/btn_learnQuickly"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnhelpful" />
+
+    <Button
+        android:id="@+id/btn_learnQuickly"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_of_typetitle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/custom_btn_typtitle"
+        android:text="Giúp Đỡ"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_onTime"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asisten" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:text="Gửi"
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        android:background="@color/colorblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_learnQuickly" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

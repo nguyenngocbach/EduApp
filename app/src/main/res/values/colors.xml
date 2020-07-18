@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorblue">#002DFF</color>
-    <color name="colorwhite">#DADAD8</color>
+    <color name="colorwhite">#FBFBFB</color>
     <color name="colergrey">#B1B1AE</color>
+    <color name="xam">#7E7E77</color>
 </resources>

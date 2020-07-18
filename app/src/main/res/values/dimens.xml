@@ -13,4 +13,7 @@
     <dimen name="size_school">18sp</dimen>
     <dimen name="padding_front_school">15dp</dimen>
     <dimen name="higth_edt">35dp</dimen>
+    <dimen name="title_hight_size">35dp</dimen>
+    <dimen name="heght_of_typetitle">35dp</dimen>
+    <dimen name="heght_size_sleeping">35dp</dimen>
 </resources>

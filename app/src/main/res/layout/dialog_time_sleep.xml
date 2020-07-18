@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:background="@drawable/custom_btn_typtitle"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="250dp">
+
+    <TextView
+        android:id="@+id/txt_pickTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Chọn Giờ"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Thoái"
+        android:background="@color/colorwhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_confirm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:background="@color/colorwhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_exit" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pickTime">
+
+        <EditText
+            android:id="@+id/edt_one_line1"
+            android:inputType="time"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="01"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_one_line2"
+            app:layout_constraintEnd_toStartOf="@+id/edt_two_line1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:textSize="14dp"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_am"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_two_line1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_two_line1"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="time"
+            android:gravity="center"
+            android:text="01"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_two_line2"
+            app:layout_constraintEnd_toStartOf="@+id/editText"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_one_line1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_one_line2"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="time"
+            android:gravity="center"
+            android:text="02"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_one_line3"
+            app:layout_constraintEnd_toStartOf="@+id/edt_two_line2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_one_line1" />
+
+        <EditText
+            android:id="@+id/edt_two_line2"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="time"
+            android:gravity="center"
+            android:text="02"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_two_line3"
+            app:layout_constraintEnd_toStartOf="@+id/edt_am"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_one_line2"
+            app:layout_constraintTop_toBottomOf="@+id/edt_two_line1" />
+
+        <EditText
+            android:id="@+id/edt_am"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:enabled="false"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="AM"
+            app:layout_constraintBottom_toTopOf="@+id/edt_pm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_two_line2"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <EditText
+            android:id="@+id/edt_one_line3"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="time"
+            android:gravity="center"
+            android:text="03"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edt_two_line3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_one_line2" />
+
+        <EditText
+            android:id="@+id/edt_two_line3"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="time"
+            android:gravity="center"
+            android:text="03"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edt_pm"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_one_line3"
+            app:layout_constraintTop_toBottomOf="@+id/edt_two_line2" />
+
+        <EditText
+            android:id="@+id/edt_pm"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:enabled="false"
+            android:text="PM"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_two_line3"
+            app:layout_constraintTop_toBottomOf="@+id/edt_am" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
