@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/custom_recircle"
+    android:padding="3dp"
+    >
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Nguyễn văn Anh"
+        android:textSize="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/txt_birthday"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_birthday"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        android:textSize="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/txtSex"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtSex"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        android:textSize="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/txt_dayStart"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_birthday"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_dayStart"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        android:textSize="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/txtTime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtSex"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        android:textSize="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/listIcon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_dayStart"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/listIcon"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtTime"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/img_eye"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/eye_nhe"
+            android:padding="3dp"
+            />
+        <ImageView
+            android:id="@+id/img_update"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/penxxx"
+            android:padding="3dp"
+            />
+        <ImageView
+            android:id="@+id/img_xxxx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/xxxxx"
+            android:padding="3dp"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

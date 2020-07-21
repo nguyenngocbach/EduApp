@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     LinearLayout lv_DiemDanh;
     ImageView imageView_Ava;
     TextView tvBack_Dialog_Picture;
-    LinearLayout actionChildrens, actionStaff, actionSchool, activeTitle,actionSleeping;
+    LinearLayout actionChildrens, actionStaff, actionSchool, activeTitle,actionSleeping, actionPlayAndLearn,actionHealth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,6 +98,18 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,SleepActivity.class));
             }
         });
+        actionPlayAndLearn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,PlayAndLearnActivity.class));
+            }
+        });
+        actionHealth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,HealthActivity.class));
+            }
+        });
     }
 
     private void Anhxa() {
@@ -120,6 +132,8 @@ public class HomeActivity extends AppCompatActivity {
         actionSchool= findViewById(R.id.btn_school);
         activeTitle= findViewById(R.id.title_activity);
         actionSleeping= findViewById(R.id.sleeping);
+        actionPlayAndLearn= findViewById(R.id.btnPlayAnhlearn);
+        actionHealth= findViewById(R.id.action_health);
     }
 
     private void Dialog_Map() {

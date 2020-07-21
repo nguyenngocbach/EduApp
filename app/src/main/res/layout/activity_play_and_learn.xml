@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PlayAndLearnActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/appbar_basic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_childrens"
+        android:layout_width="@dimen/hight_icon_playlearn"
+        android:layout_height="@dimen/hight_icon_playlearn"
+        android:layout_marginStart="@dimen/marginstart_start"
+        android:layout_marginTop="45dp"
+        android:padding="5dp"
+        android:src="@drawable/custom_edt_addchildren"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar" />
+
+    <TextView
+        android:id="@+id/txt_childrens"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hight_icon_playlearn"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="Trẻ"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/btn_pick_childrens"
+        app:layout_constraintStart_toEndOf="@id/icon_childrens"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+
+        />
+
+    <Button
+        android:id="@+id/btn_pick_childrens"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/hight_icon_playlearn"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="45dp"
+        android:background="@color/colorblue"
+        android:text="Chọn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        android:padding="5dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/frame_layoyt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_pick_childrens"
+        app:layout_constraintStart_toEndOf="@id/icon_childrens"
+        app:layout_constraintTop_toBottomOf="@id/txt_childrens">
+
+        <TextView
+            android:id="@+id/txt_listChildren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="không có Trẻ nào " />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_listChildren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_line_one"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="@dimen/marginstart_start"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="@dimen/marginstart_start"
+        android:background="@color/colergrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_layoyt" />
+
+    <TextView
+        android:id="@+id/txt_pick_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginstart_start"
+        android:layout_marginTop="40dp"
+        android:text="Chọn loại hoạt động *"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_line_one" />
+
+    <Button
+        android:id="@+id/btn_indoor"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hight_icon_playlearn"
+        android:text="Trong Nhà"
+        app:layout_constraintEnd_toStartOf="@+id/btn_outDoor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pick_activity"
+        android:layout_marginStart="@dimen/marginstart_start"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_btn_indoor"
+        android:textColor="@color/colorwhite"
+        android:textAllCaps="false"
+
+        />
+
+    <Button
+        android:id="@+id/btn_outDoor"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hight_icon_playlearn"
+        android:text="Ngoài Trời"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_indoor"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pick_activity"
+        android:layout_marginEnd="@dimen/marginstart_start"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_btn_outdoor"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/colorwhite"
+        android:textAllCaps="false"
+        />
+    <ImageView
+        android:id="@+id/dotes_2"
+        android:layout_width="@dimen/hight_icon_playlearn"
+        android:layout_height="@dimen/hight_icon_playlearn"
+        android:src="@drawable/custom_edt_addchildren"
+        app:layout_constraintTop_toBottomOf="@id/btn_indoor"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/marginstart_start"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/txt_nameActivity"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hight_icon_playlearn"
+        android:text="Tên hoạt động"
+        app:layout_constraintTop_toBottomOf="@id/btn_indoor"
+        app:layout_constraintStart_toEndOf="@id/dotes_2"
+        app:layout_constraintEnd_toStartOf="@id/btn_pick_activity"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btn_pick_activity"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/hight_icon_playlearn"
+        android:background="@color/colorblue"
+        app:layout_constraintTop_toBottomOf="@id/btn_indoor"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="45dp"
+        android:text="Chọn"
+        android:textColor="@color/colorwhite"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/txt_list_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_nameActivity"
+        app:layout_constraintStart_toEndOf="@id/dotes_2"
+        app:layout_constraintEnd_toEndOf="@id/btn_pick_activity"
+        android:layout_marginTop="5dp"
+        android:paddingStart="15dp"
+        android:text="Chưa có hoạt đông nào"
+        />
+
+    <TextView
+        android:id="@+id/txt_line_two"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="@dimen/marginstart_start"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="@dimen/marginstart_start"
+        android:background="@color/colergrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_list_activity" />
+
+    <TextView
+        android:id="@+id/txt_timeActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Chọn thời gian hoạt động"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="@dimen/hight_icon_playlearn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_line_two"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txt_timeStart"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="Start"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txt_timeActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/marginstart_start"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        />
+    <EditText
+        android:id="@+id/edt_timeStart"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_timeStart"
+        app:layout_constraintStart_toEndOf="@id/txt_timeStart"
+        android:textSize="13dp"
+        android:enabled="false"
+        />
+    <ImageView
+        android:id="@+id/icon_startTime"
+        android:layout_width="@dimen/title_hight_size"
+        android:layout_height="@dimen/title_hight_size"
+        android:src="@drawable/ic_baseline_access_time_24"
+        app:layout_constraintBottom_toBottomOf="@id/txt_timeStart"
+        app:layout_constraintStart_toEndOf="@id/edt_timeStart"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/titleEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="End"
+        app:layout_constraintTop_toBottomOf="@id/txt_timeStart"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="35dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:id="@+id/edt_timeEnd"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@id/titleEnd"
+        app:layout_constraintStart_toEndOf="@id/txt_timeStart"
+        android:layout_marginTop="5dp"
+        android:textSize="13dp"
+        android:enabled="false"
+        />
+
+    <ImageView
+        android:id="@+id/icon_endTime"
+        app:layout_constraintStart_toEndOf="@id/edt_timeEnd"
+        app:layout_constraintBottom_toBottomOf="@id/edt_timeEnd"
+        android:src="@drawable/ic_baseline_access_time_24"
+        android:padding="5dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+    <EditText
+        android:id="@+id/edt_files"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_sleeping"
+        app:layout_constraintTop_toBottomOf="@id/icon_endTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="14dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:paddingEnd="40dp"
+        android:hint="nhân link vào đây"
+        />
+    <ImageView
+        android:id="@+id/icon_files"
+        android:src="@drawable/ic_baseline_attach_file_24"
+        app:layout_constraintBottom_toBottomOf="@id/edt_files"
+        app:layout_constraintEnd_toEndOf="@id/edt_files"
+        android:layout_width="@dimen/heght_size_sleeping"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="@dimen/heght_size_sleeping"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/icon_files"
+        app:layout_constraintEnd_toEndOf="@id/icon_files"
+        android:text="0/800"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@color/colorblue"
+        android:text="Gửi"
+        android:textColor="@color/colorwhite"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_files"
+        android:layout_marginTop="40dp"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

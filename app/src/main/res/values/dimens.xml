@@ -16,4 +16,8 @@
     <dimen name="title_hight_size">35dp</dimen>
     <dimen name="heght_of_typetitle">35dp</dimen>
     <dimen name="heght_size_sleeping">35dp</dimen>
+    <dimen name="hight_icon_playlearn">40dp</dimen>
+    <dimen name="marginstart_start">35dp</dimen>
+    <dimen name="heght_size_typeactivity">35dp</dimen>
+    <dimen name="margintop_watch_children">30dp</dimen>
 </resources>

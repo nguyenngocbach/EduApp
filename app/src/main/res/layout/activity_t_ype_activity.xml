@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TYpeActivityActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/appbar_basic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_air"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Nghệ Thuật"
+        app:layout_constraintEnd_toStartOf="@+id/btn_share"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Hinh Dạnh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_air"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_color"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Màu Sắc"
+        app:layout_constraintEnd_toStartOf="@+id/btn_contruction"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_air"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="false"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_contruction"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Khôi Xây"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_color"
+        app:layout_constraintTop_toBottomOf="@+id/btn_share"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_dance"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Khuyên Vũ"
+        app:layout_constraintEnd_toStartOf="@+id/btn_handmade"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_color"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="false"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_handmade"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Thủ Công"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_dance"
+        app:layout_constraintTop_toBottomOf="@+id/btn_contruction"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_music"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Âm Nhạc"
+        app:layout_constraintEnd_toStartOf="@+id/btnDraw"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dance"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="false"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnDraw"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Vẽ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_music"
+        app:layout_constraintTop_toBottomOf="@+id/btn_handmade"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_pottery"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Đồ Gốm"
+        app:layout_constraintEnd_toStartOf="@+id/btn_spell"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_music"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="false"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_spell"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heght_size_typeactivity"
+        android:text="Đánh Vần"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_pottery"
+        app:layout_constraintTop_toBottomOf="@+id/btnDraw"
+        android:background="@drawable/custom_btn_typtitle"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:text="Xong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_spell"
+        android:background="@color/colorblue"
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

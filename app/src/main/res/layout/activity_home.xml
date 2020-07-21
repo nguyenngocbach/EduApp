@@ -160,6 +160,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/action_health"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center"
@@ -221,6 +222,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/btnPlayAnhlearn"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center"
