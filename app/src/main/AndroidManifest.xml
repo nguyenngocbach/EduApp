@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".Activity.WatchHealthActivity"></activity>
+        <activity android:name=".Activity.SanitationActivity"></activity>
+        <activity
+            android:name=".Activity.WacthHealth2Activity"
+            android:parentActivityName=".Activity.HealthActivity" />
+        <activity android:name=".Activity.WatchHealthActivity" />
         <activity android:name=".Activity.HealthActivity" />
         <activity android:name=".Activity.TYpeActivityActivity" />
         <activity android:name=".Activity.PlayAndLearnActivity" />
