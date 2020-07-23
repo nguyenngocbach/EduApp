@@ -3,7 +3,10 @@ package com.example.eduapp.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,9 +15,13 @@ import com.example.eduapp.R;
 
 public class TypeTitleActivity extends AppCompatActivity {
 
+    public static final String TYPETILEACTIVITY="type_result";
+
     private Toolbar toolbar;
     private TextView txtToolbar;
     private Button btnBack, btnBrave,btnCreative,btnHelpful, btnAssist,btnOnTime, btnLearnQuickly,btnDone;
+
+    private String title="";
 
 
     @Override
@@ -29,6 +36,7 @@ public class TypeTitleActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setResult(Activity.RESULT_CANCELED);
                 finish();
             }
         });
@@ -37,6 +45,7 @@ public class TypeTitleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // todo something
+                title= btnBrave.getText().toString();
             }
         });
 
@@ -44,12 +53,14 @@ public class TypeTitleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // todo something
+                title= btnCreative.getText().toString();
             }
         });
         btnHelpful.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // todo something
+                title= btnHelpful.getText().toString();
             }
         });
 
@@ -57,6 +68,7 @@ public class TypeTitleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // todo something
+                title= btnAssist.getText().toString();
             }
         });
 
@@ -64,6 +76,7 @@ public class TypeTitleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // todo something
+                title= btnOnTime.getText().toString();
             }
         });
 
@@ -71,6 +84,7 @@ public class TypeTitleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // todo something
+                title= btnLearnQuickly.getText().toString();
             }
         });
 
@@ -78,6 +92,10 @@ public class TypeTitleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // todo something
+                Intent data= new Intent();
+                data.putExtra(TYPETILEACTIVITY,title);
+                Log.d("bachdz",title+"1");
+                setResult(Activity.RESULT_OK,data);
                 finish();
             }
         });

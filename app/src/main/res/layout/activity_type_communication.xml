@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TypeCommunicationActivity">
+    <include layout="@layout/appbar_basic"
+        android:id="@+id/toolbar"
+        />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Chọn"
+        android:background="@color/colorblue"
+        android:textColor="@color/colorwhite"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTypeCommunication"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Loại giao tiếp"
+        android:textAllCaps="false"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_btn_click"
+        app:layout_constraintEnd_toStartOf="@+id/btnBirthDay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <Button
+        android:id="@+id/btnBirthDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Điều ước sinh nhật"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/custom_btn_click"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTypeCommunication"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <Button
+        android:id="@+id/btnHoliday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ngày lễ"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnHomeWork"
+        android:background="@drawable/custom_btn_click"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTypeCommunication" />
+
+    <Button
+        android:id="@+id/btnHomeWork"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bài tập về nhà"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_btn_click"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHoliday"
+        app:layout_constraintTop_toBottomOf="@+id/btnBirthDay" />
+
+    <Button
+        android:id="@+id/btnplan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kế hoạch học bài"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btnRemind"
+        android:background="@drawable/custom_btn_click"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHoliday" />
+
+    <Button
+        android:id="@+id/btnRemind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="nhăc nhở"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnplan"
+        android:background="@drawable/custom_btn_click"
+        app:layout_constraintTop_toBottomOf="@+id/btnHomeWork" />
+</androidx.constraintlayout.widget.ConstraintLayout>

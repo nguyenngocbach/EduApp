@@ -27,7 +27,7 @@ public class SchoolActivity extends AppCompatActivity {
             edtHomeTown, edtDateWorking, edtHoursWorking,edtPlan, edtNameCompany;
 
     private ViewAnimator animator;
-    private int[] listImage= {R.drawable.xe_em,R.drawable.bo_em,R.drawable.ja_ngoc_trinh,R.drawable.mayback_em};
+    private int[] listImage= {R.drawable.anh_dep,R.drawable.anh_dep,R.drawable.anh_dep,R.drawable.anh_dep};
     private Handler handler=new Handler();
     private int index =0;
     private ImageView view;

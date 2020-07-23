@@ -1,5 +1,6 @@
 package com.example.eduapp.Activity;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -21,9 +22,14 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.eduapp.Model.Children;
 import com.example.eduapp.R;
 
+import java.util.List;
+
 public class SanitationActivity extends AppCompatActivity {
+
+    public static final int CODE_SANITATION =119;
 
     private Toolbar toolbar;
     private TextView txtToolbar,txtDem;
@@ -53,7 +59,8 @@ public class SanitationActivity extends AppCompatActivity {
         btnPickChildrens.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SanitationActivity.this,PickChildrenActivity.class));
+               Intent intent= new Intent(SanitationActivity.this,PickChildrenActivity.class);
+               startActivityForResult(intent,CODE_SANITATION);
             }
         });
 
@@ -447,6 +454,15 @@ public class SanitationActivity extends AppCompatActivity {
         btnAgree= dialog.findViewById(R.id.btn_agree);
         btnCancel= dialog.findViewById(R.id.btn_cancel);
         txtDem= findViewById(R.id.txt_dem);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode==CODE_SANITATION &&  resultCode==RESULT_OK){
+            List<Children> children= (List<Children>) data.getSerializableExtra(PickChildrenActivity.EXTRA_CHILDREN);
+            Log.d("bachdz",children.size()+":::::");
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override

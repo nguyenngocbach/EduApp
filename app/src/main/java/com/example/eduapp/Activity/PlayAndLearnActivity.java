@@ -1,5 +1,6 @@
 package com.example.eduapp.Activity;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -8,15 +9,22 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.eduapp.Model.Children;
 import com.example.eduapp.R;
 
+import java.util.List;
+
 public class PlayAndLearnActivity extends AppCompatActivity {
+
+    public static final int TYPE_PLAYANDLEARN=105;
+    private static final int TYPEACTIVITY =101 ;
 
     private Toolbar toolbar;
     private TextView txtToolbar,txtNameActivity;
@@ -50,13 +58,15 @@ public class PlayAndLearnActivity extends AppCompatActivity {
         btnPickChildrens.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(PlayAndLearnActivity.this,PickChildrenActivity.class));
+                Intent intent= new Intent(PlayAndLearnActivity.this,PickChildrenActivity.class);
+                startActivityForResult(intent,TYPE_PLAYANDLEARN);
             }
         });
         btnActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(PlayAndLearnActivity.this,TYpeActivityActivity.class));
+               Intent intent=new Intent(PlayAndLearnActivity.this,TYpeActivityActivity.class);
+               startActivityForResult(intent,TYPEACTIVITY);
             }
         });
         btnIndoor.setOnClickListener(new View.OnClickListener() {
@@ -152,5 +162,18 @@ public class PlayAndLearnActivity extends AppCompatActivity {
         edt23= findViewById(R.id.edt_two_line3);
         edtAm= findViewById(R.id.edt_am);
         edtPm= findViewById(R.id.edt_pm);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode==TYPE_PLAYANDLEARN&& resultCode==RESULT_OK){
+            List<Children> children= (List<Children>) data.getSerializableExtra(PickChildrenActivity.EXTRA_CHILDREN);
+            Log.d("bachdz",children.size()+"");
+        }
+        if (requestCode==TYPEACTIVITY && resultCode==RESULT_OK){
+            String title= data.getStringExtra(TYpeActivityActivity.TYPE_ACTIVITY);
+            txtNameActivity.setText(title);
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }

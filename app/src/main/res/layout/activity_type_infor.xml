@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TypeInforActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/appbar_basic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAttend"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:text="Điểm Danh"
+        app:layout_constraintEnd_toStartOf="@+id/btnEmotional"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnEmotional"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:text="Đa Cảm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAttend"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnConsciousness"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Nhận Thức"
+        app:layout_constraintEnd_toStartOf="@+id/btnSkills"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAttend"
+
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnSkills"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Kỹ năng vận đông thô"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnConsciousness"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmotional"
+
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnConcurSkill"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Kỹ năng vận đồng tình"
+        app:layout_constraintEnd_toStartOf="@+id/btnLearn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsciousness"
+
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnLearn"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Học Tập"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnConcurSkill"
+        app:layout_constraintTop_toBottomOf="@+id/btnSkills"
+
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnLanguage"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Ngôn Ngữ"
+        app:layout_constraintEnd_toStartOf="@+id/btnSocial"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConcurSkill"
+
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnSocial"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Xã Hội"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/btnLearn"
+
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnNumber"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Con Số"
+        app:layout_constraintEnd_toStartOf="@+id/btnBehavior"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLanguage"
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnBehavior"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Hàng Vi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnNumber"
+        app:layout_constraintTop_toBottomOf="@+id/btnSocial"
+        android:background="@drawable/custom_btn_click"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="70dp"
+        android:text="Xong"
+        android:textAllCaps="false"
+        android:background="@color/colorblue"
+        android:textColor="@color/colorwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBehavior" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

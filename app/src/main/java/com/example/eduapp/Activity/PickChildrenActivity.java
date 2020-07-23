@@ -5,6 +5,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,11 +17,13 @@ import com.example.eduapp.Model.ChildListener;
 import com.example.eduapp.Model.Children;
 import com.example.eduapp.R;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PickChildrenActivity extends AppCompatActivity implements ChildListener {
 
+    public static final String EXTRA_CHILDREN = "DATA_CHILDRENS";
     public static String ACTIVITY="PICKCHILDRENACTIVITY";
 
     private Toolbar toolbar;
@@ -57,29 +60,26 @@ public class PickChildrenActivity extends AppCompatActivity implements ChildList
 
     private void listenner() {
         btnPickOne.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View view) {
                 for (int i=0;i<mChildren.size();i++){
                     mChildren.get(i).setCheck(false);
                 }
-                btnPickAll.setBackgroundColor(R.color.xam);
-                btnPickOne.setBackgroundColor(R.color.colorblue);
+                btnPickAll.setBackgroundResource(R.color.xam);
+                btnPickOne.setBackgroundResource(R.color.colorblue);
                 adapter.notifyDataSetChanged();
                 //todo something;
             }
         });
         btnPickAll.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View view) {
                 for (int i=0;i<mChildren.size();i++){
                     mChildren.get(i).setCheck(true);
                 }
-                btnPickAll.setBackgroundColor(R.color.colorblue);
-                btnPickOne.setBackgroundColor(R.color.xam);
+                btnPickAll.setBackgroundResource(R.color.colorblue);
+                btnPickOne.setBackgroundResource(R.color.xam);
                 adapter.notifyDataSetChanged();
-
                 //todo something
             }
         });
@@ -87,6 +87,15 @@ public class PickChildrenActivity extends AppCompatActivity implements ChildList
             @Override
             public void onClick(View view) {
                 //todo somgthing
+                Intent intent= new Intent();
+                List<Children> children= new ArrayList<>();
+                for (int i=0;i<mChildren.size();i++){
+                    if (mChildren.get(i).isCheck()){
+                        children.add(mChildren.get(i));
+                    }
+                }
+                intent.putExtra(EXTRA_CHILDREN, (Serializable) children);
+                setResult(Activity.RESULT_OK,intent);
                 finish();
 
             }
@@ -95,6 +104,7 @@ public class PickChildrenActivity extends AppCompatActivity implements ChildList
             @Override
             public void onClick(View view) {
                 finish();
+                setResult(Activity.RESULT_CANCELED);
             }
         });
     }

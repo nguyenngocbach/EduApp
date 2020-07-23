@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".Activity.SanitationActivity"></activity>
+        <activity android:name=".Activity.NewEventActivity"></activity>
+        <activity android:name=".Activity.CalendarActivity" />
+        <activity android:name=".Activity.TypeInforActivity" />
+        <activity android:name=".Activity.ObserveActivity" />
+        <activity android:name=".Activity.TypeCommunicationActivity" />
+        <activity android:name=".Activity.DiaryActivity" />
+        <activity android:name=".Activity.SanitationActivity" />
         <activity
             android:name=".Activity.WacthHealth2Activity"
             android:parentActivityName=".Activity.HealthActivity" />

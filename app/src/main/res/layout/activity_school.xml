@@ -23,7 +23,7 @@
             android:layout_height="0dp"
             android:scaleType="centerCrop"
             android:src="@drawable/xe_em"
-            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintDimensionRatio="16:8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar_school" />

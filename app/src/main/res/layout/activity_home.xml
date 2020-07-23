@@ -68,6 +68,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/action_diary"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center"
@@ -83,7 +84,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nhật ký"
+                            android:text="Nhật Ký"
                             android:textSize="11dp" />
                     </LinearLayout>
 
@@ -103,7 +104,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thực đơn"
+                            android:text="Thực Đơn"
                             android:textSize="11dp" />
                     </LinearLayout>
 
@@ -124,7 +125,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Danh hiệu"
+                            android:text="Danh Hiệu"
                             android:textSize="11dp" />
                     </LinearLayout>
 
@@ -178,11 +179,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Điểm danh"
+                            android:text="Sức Khỏe"
                             android:textSize="11dp" />
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/action_observe"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center"
@@ -198,7 +200,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nhật ký"
+                            android:text="Quan Sát"
                             android:textSize="11dp" />
                     </LinearLayout>
 
@@ -218,7 +220,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thực đơn"
+                            android:text="Album Ảnh"
                             android:textSize="11dp" />
                     </LinearLayout>
 
@@ -239,7 +241,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Danh hiệu"
+                            android:text="Chơi vs Học"
                             android:textSize="11dp" />
                     </LinearLayout>
 
@@ -260,7 +262,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vệ sinh"
+                            android:text="Giắc Ngủ"
                             android:textSize="11dp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -293,6 +295,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/actionCalender"
                         android:layout_marginLeft="5dp"
                         android:layout_width="80dp"
                         android:layout_height="85dp"

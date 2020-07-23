@@ -1,6 +1,8 @@
 package com.example.eduapp.Model;
 
-public class Children {
+import java.io.Serializable;
+
+public class Children implements Serializable {
     private int id;
     private String name;
     private String img;

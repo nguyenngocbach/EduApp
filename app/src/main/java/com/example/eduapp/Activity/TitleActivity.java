@@ -1,11 +1,13 @@
 package com.example.eduapp.Activity;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,6 +21,8 @@ import java.util.List;
 
 public class TitleActivity extends AppCompatActivity {
 
+    public static final int TYPE_TITLE = 121;
+    public static final int CODE_PICK_CHILDRENS =100 ;
     private Toolbar toolbar;
     private TextView txtToolbar,txtPickChildrens, txtPickTitles;
     private Button btnBack, btnPickChildrens, btnPickTitle, btnSend;
@@ -50,14 +54,16 @@ public class TitleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //todo somgthing
-                startActivity(new Intent(TitleActivity.this,TypeTitleActivity.class));
+                Intent intent=new Intent(TitleActivity.this,TypeTitleActivity.class);
+                startActivityForResult(intent,TYPE_TITLE);
             }
         });
         btnPickChildrens.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //todo something
-                startActivity(new Intent(TitleActivity.this,PickChildrenActivity.class));
+                Intent intent=new Intent(TitleActivity.this,PickChildrenActivity.class);
+                startActivityForResult(intent,CODE_PICK_CHILDRENS);
             }
         });
     }
@@ -75,4 +81,17 @@ public class TitleActivity extends AppCompatActivity {
         btnSend= findViewById(R.id.btn_confirm);
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode==TYPE_TITLE&& resultCode==RESULT_OK){
+            String title= data.getStringExtra(TypeTitleActivity.TYPETILEACTIVITY);
+            Log.d("bachdz",title+"");
+            txtPickTitles.setText(title);
+        }
+        if (requestCode==CODE_PICK_CHILDRENS&& resultCode==RESULT_OK){
+            List<Children> children= (List<Children>) data.getSerializableExtra(PickChildrenActivity.EXTRA_CHILDREN);
+            Log.d("bachdz",children.size()+"");
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 }

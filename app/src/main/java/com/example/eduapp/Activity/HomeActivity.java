@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
     ImageView imageView_Ava;
     TextView tvBack_Dialog_Picture;
     LinearLayout actionChildrens, actionStaff, actionSchool, activeTitle,actionSleeping,
-            actionPlayAndLearn,actionHealth,actionSanitation;
+            actionPlayAndLearn,actionHealth,actionSanitation, actionDiary,actionObserve,actionCalender;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,6 +118,25 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,SanitationActivity.class));
             }
         });
+
+        actionDiary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,DiaryActivity.class));
+            }
+        });
+        actionObserve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,ObserveActivity.class));
+            }
+        });
+        actionCalender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,CalendarActivity.class));
+            }
+        });
     }
 
     private void Anhxa() {
@@ -143,6 +162,9 @@ public class HomeActivity extends AppCompatActivity {
         actionPlayAndLearn= findViewById(R.id.btnPlayAnhlearn);
         actionHealth= findViewById(R.id.action_health);
         actionSanitation= findViewById(R.id.actionSanitation);
+        actionDiary= findViewById(R.id.action_diary);
+        actionObserve= findViewById(R.id.action_observe);
+        actionCalender= findViewById(R.id.actionCalender);
     }
 
     private void Dialog_Map() {

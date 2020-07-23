@@ -3,6 +3,8 @@ package com.example.eduapp.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,10 +14,14 @@ import com.example.eduapp.R;
 
 public class TYpeActivityActivity extends AppCompatActivity {
 
+    public static final String TYPE_ACTIVITY="type_type";
+
     private Toolbar toolbar;
     private TextView txtToolbar;
     private Button btnToolbar,btnDone;
     private Button btnArt, btnShare, btnColor, btnConstruction, btnDance, btnCraft, btnMusic, btnDraw, btnPottery, btnSpell;
+    private String title="";
+
 
     private View.OnClickListener listener= new View.OnClickListener() {
         @Override
@@ -23,24 +29,34 @@ public class TYpeActivityActivity extends AppCompatActivity {
            switch (view.getId()){
                // todo something
                case R.id.btn_air :
+                   title=btnArt.getText().toString();
                    break;
                case R.id.btn_share:
+                   title=btnShare.getText().toString();
                    break;
                case  R.id.btn_color :
+                   title=btnColor.getText().toString();
                    break;
                case R.id.btn_contruction :
+                   title=btnConstruction.getText().toString();
                    break;
                case R.id.btn_dance:
+                   title=btnDance.getText().toString();
                    break;
                case R.id.btn_handmade:
+                   title=btnCraft.getText().toString();
                    break;
                case R.id.btn_music:
+                   title=btnMusic.getText().toString();
                    break;
                case R.id.btnDraw:
+                   title=btnDraw.getText().toString();
                    break;
                case R.id.btn_pottery:
+                   title=btnPottery.getText().toString();
                    break;
                case R.id.btn_spell:
+                   title=btnSpell.getText().toString();
                    break;
            }
         }
@@ -57,6 +73,7 @@ public class TYpeActivityActivity extends AppCompatActivity {
         btnToolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setResult(Activity.RESULT_CANCELED);
                 finish();
             }
         });
@@ -64,6 +81,9 @@ public class TYpeActivityActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // todo something
+                Intent intent= new Intent();
+                intent.putExtra(TYPE_ACTIVITY,title);
+                setResult(Activity.RESULT_OK,intent);
                 finish();
             }
         });
