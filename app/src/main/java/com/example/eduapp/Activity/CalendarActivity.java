@@ -1,5 +1,6 @@
 package com.example.eduapp.Activity;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +16,7 @@ import com.example.eduapp.R;
 
 public class CalendarActivity extends AppCompatActivity {
 
+    private static final int CODE_CALENDER =101 ;
     private Toolbar toolbar;
     private TextView txtToolbar,txtNull;
     private Button btnToolbar;
@@ -70,7 +72,7 @@ public class CalendarActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(CalendarActivity.this,NewEventActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent,CODE_CALENDER);
             }
         });
     }
@@ -107,5 +109,10 @@ public class CalendarActivity extends AppCompatActivity {
         imgAdd= findViewById(R.id.btn_add);
         txtNull= findViewById(R.id.txt_text_null);
         recyclerEvents= findViewById(R.id.recycler_calender);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }

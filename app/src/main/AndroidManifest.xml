@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".Activity.NewEventActivity"></activity>
+        <activity android:name=".Activity.FindWayActivity"></activity>
+        <activity android:name=".Activity.NewEventActivity" />
         <activity android:name=".Activity.CalendarActivity" />
         <activity android:name=".Activity.TypeInforActivity" />
         <activity android:name=".Activity.ObserveActivity" />
