@@ -1,4 +1,4 @@
-package com.example.eduapp.Class;
+package com.example.eduapp.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,8 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.eduapp.Model.ChildListener;
-import com.example.eduapp.Model.Children;
+import com.example.eduapp.Class.Children;
 import com.example.eduapp.Model.HealthListenner;
 import com.example.eduapp.R;
 

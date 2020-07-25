@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
     ImageView imageView_Ava;
     TextView tvBack_Dialog_Picture;
     LinearLayout actionChildrens, actionStaff, actionSchool, activeTitle,actionSleeping,
-            actionPlayAndLearn,actionHealth,actionSanitation, actionDiary,actionObserve,actionCalender;
+            actionPlayAndLearn,actionHealth,actionSanitation, actionDiary,actionObserve,actionCalender,actionHistory;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -137,6 +137,12 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,CalendarActivity.class));
             }
         });
+        actionHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,HistoryActivity.class));
+            }
+        });
     }
 
     private void Anhxa() {
@@ -165,6 +171,7 @@ public class HomeActivity extends AppCompatActivity {
         actionDiary= findViewById(R.id.action_diary);
         actionObserve= findViewById(R.id.action_observe);
         actionCalender= findViewById(R.id.actionCalender);
+        actionHistory= findViewById(R.id.actionHistory);
     }
 
     private void Dialog_Map() {

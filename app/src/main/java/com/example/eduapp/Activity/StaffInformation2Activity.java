@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.eduapp.Class.PermissionAdapter;
+import com.example.eduapp.adapter.PermissionAdapter;
 import com.example.eduapp.Model.Permission;
 import com.example.eduapp.Model.PermissionListener;
 import com.example.eduapp.R;

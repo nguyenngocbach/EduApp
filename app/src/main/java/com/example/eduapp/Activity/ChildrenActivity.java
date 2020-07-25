@@ -13,10 +13,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.eduapp.Class.ChildrenAdapter;
+import com.example.eduapp.adapter.ChildrenAdapter;
 import com.example.eduapp.Model.AddChildrenListener;
 import com.example.eduapp.Model.ChildListener;
-import com.example.eduapp.Model.Children;
+import com.example.eduapp.Class.Children;
 import com.example.eduapp.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

@@ -11,8 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.eduapp.Class.HealthChildrensAdapter;
-import com.example.eduapp.Model.Children;
+import com.example.eduapp.adapter.HealthChildrensAdapter;
+import com.example.eduapp.Class.Children;
 import com.example.eduapp.Model.HealthListenner;
 import com.example.eduapp.R;
 

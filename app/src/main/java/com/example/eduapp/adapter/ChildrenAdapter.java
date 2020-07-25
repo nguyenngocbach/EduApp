@@ -1,11 +1,10 @@
-package com.example.eduapp.Class;
+package com.example.eduapp.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.eduapp.Activity.PickChildrenActivity;
 import com.example.eduapp.Model.ChildListener;
-import com.example.eduapp.Model.Children;
+import com.example.eduapp.Class.Children;
 import com.example.eduapp.R;
 
 import java.util.List;

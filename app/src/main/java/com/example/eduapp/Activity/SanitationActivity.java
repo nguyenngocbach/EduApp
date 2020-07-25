@@ -22,7 +22,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.eduapp.Model.Children;
+import com.example.eduapp.Class.Children;
 import com.example.eduapp.R;
 
 import java.util.List;

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/fromDateCome"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Từ ngày"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:background="@drawable/custom_recircle"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/fromDateTo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Đến ngày"
+        android:gravity="center_vertical"
+        android:background="@drawable/custom_recircle"
+        android:paddingStart="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        />
+
+
+</LinearLayout>

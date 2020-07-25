@@ -5,15 +5,13 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.eduapp.Class.ChildrenAdapter;
-import com.example.eduapp.Class.StaffAdapter;
+import com.example.eduapp.adapter.StaffAdapter;
 import com.example.eduapp.Model.Staff;
 import com.example.eduapp.Model.StaffListenner;
 import com.example.eduapp.R;

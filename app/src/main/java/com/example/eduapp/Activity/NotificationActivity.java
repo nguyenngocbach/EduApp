@@ -8,10 +8,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.example.eduapp.Class.Notification;
-import com.example.eduapp.Class.NotificationAdapter;
+import com.example.eduapp.adapter.NotificationAdapter;
 import com.example.eduapp.R;
 
 import java.util.ArrayList;

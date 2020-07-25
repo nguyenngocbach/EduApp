@@ -1,4 +1,4 @@
-package com.example.eduapp.Class;
+package com.example.eduapp.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

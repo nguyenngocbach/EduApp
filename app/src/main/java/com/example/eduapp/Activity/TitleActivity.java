@@ -3,7 +3,6 @@ package com.example.eduapp.Activity;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,9 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.eduapp.Class.ChildrenAdapter;
-import com.example.eduapp.Model.ChildListener;
-import com.example.eduapp.Model.Children;
+import com.example.eduapp.Class.Children;
 import com.example.eduapp.R;
 
 import java.util.List;
